@@ -1,0 +1,104 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Playball&display=swap');
+.qualification{
+    background-color: aliceblue;
+    width: 100%;
+    height: 625px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+.circle4{
+    margin-top: 80px;
+    margin-left: 100px;
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+   background-color: lightpink;
+   position: absolute;
+}
+ .circle5{
+    margin-top: 450px;
+    margin-left: 1200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: lightpink;
+    position:absolute;
+} 
+
+
+.qualification h2{
+  margin-bottom: 5rem;
+}
+.btn{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: palevioletred;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem plum;
+  color: black;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  font-family: "Courgette", cursive;
+}
+.heading{
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Playball", cursive;
+  padding-top: 100px;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 1s;
+}
+.heading span{
+  color: palevioletred;
+}
+.btn:hover{
+  box-shadow: none;
+}
+.qualification-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+.qualification-container .qualification-box{
+  flex: 1 1 20rem;
+  background:transparent;
+  padding: 1rem 1rem 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  border: .2rem solid palevioletred;
+  transition: .5s ease;
+}
+.qualification-container .qualification-box:hover{
+  background-color: pink;
+  transform: scale(1.02);
+}
+.qualification-box h3{
+  font-size: 2.6rem;
+  font-family: "Courgette", cursive;
+}
+.qualification-box i{
+  font-size: 50px;
+}
+.qualification-box p{
+  font-size: 1.3rem;
+  margin: 0.5rem 0 0.5rem;
+  font-family: "Courgette", cursive;
+}
+ 
+
+ @keyframes slideBottom{
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } 
